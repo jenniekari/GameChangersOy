@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" name="viewport" content="with=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,700;1,200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bf5c46f0c2.js" crossorigin="anonymous"></script>
+    <title>ICT-firm "Game Changers Oy" 0.1</title>
+</head>
+
+<body>
+
+    <!---- Header ----->
+    <section class="header">
+        <nav>
+            <a href="Index.html"><img src="logo.png"  alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-window-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="" style="color:white">ETUSIVU</a></li>
+                    <li><a href="#about" style="color:white">MEISTÄ</a></li>
+                    <li><a href="#emp" style="color:white">TYÖNTEKIJÄT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" style="color:white" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Keravan suosituin nettisivujen tekijä.</h1>
+            <p>Teemme Keravan yksinkertaisimpia nettisivuja yrityksille ja yksityishenkilöille.<br>Kaikki sivut tehdään responsiivisina.</p>
+            <a href="#emp" class="header-btn">Täältä löydät työntekijämme.</a>
+        </div>
+
+    </section>
+
+    <!------ About ------>
+
+    <section class="about" id="about">
+        <h1>Meistä</h1>
+        <p>Olemme pienyritys Keravalta, jonka tavoitteena on olla 2022 vuoteen mennessä Uudenmaan suosituin nettisivujen tekijä.<br>
+        Aloitimme vuoden 2020 syksyllä ja kysyntä on ollut huima. Kiitos Kerava!</p>
+        <br><br><br>
+        <h1>Kohti uusia nettisivuja</h1>
+        <p>Alla askeleet, joilla saat unelmien nettisivut!</p>
+        <div class="row">
+            <div class="about-col">
+                <h3>1. Yhteydenotto</h3>
+                <p>Jätä meille sähköpostia minkälainen nettisivu on toiveessa.</p>
+            </div>
+            <div class="about-col">
+                <h3>2. Tarjous</h3>
+                <p>Lähetämme sinulle tarjouksen ja tarjouksen hyväksyttyä lähetämme sinulle luonnoksen sivuista.</p>
+            </div>
+            <div class="about-col">
+                <h3>3. Toteutus</h3>
+                <p>Luodaan nettisivut, ollaan vuorovaikutuksissa ja palautamme nettisivut sinun käyttöösi!</p>
+            </div>
+        </div>
+    </section>
+
+    <!---- Info about employees -->
+
+    <section class="info">
+    <div class="row">
+        <div class="info-col">
+            <h1>Työnimikkeet</h1>
+            <button type="button" class="p-btn" onclick="tuoEmployees()">Tuo varatut työnimikkeet</button>
+            <p id="employeeList"></p>
+        </div>
+        <div class="info-col" id="emp">
+            <h1>Työntekijät</h1>
+            <button type="button" class="p-btn" onclick="tuoLuettelo()">Katso työntekijöitä</button>
+                <p id="employees"></p>
+        </div>
+        <div class="info-col">
+            <h1>Sähköpostit</h1>
+            <button type="button" class="p-btn" onclick="tuoEmail()">Katso sähköposteja</button>
+                <p id="emails"></p>
+        </div>
+    </div>
+    </section>
+
+    <!---- Footer ----->
+
+    <footer id="footer">
+        <p>Jennie Kari:n JavaScript-kurssin kurssitehtävä.</p>
+    </footer>
+
+    <!-------- Javascript for Toggle Menu -------->
+
+    <script src="Lists.js"></script>
+</body>
+</html>
